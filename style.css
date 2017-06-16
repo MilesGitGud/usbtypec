@@ -1,0 +1,104 @@
+#bg {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgb(16, 16, 16);
+}
+
+.bg {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) !important;
+  background-size: 1800% 1800% !important;
+  -webkit-animation: rainbow 1s ease infinite !important;
+  -z-animation: rainbow 1s ease infinite !important;
+  -o-animation: rainbow 1s ease infinite !important;
+  animation: rainbow 1s ease infinite !important;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+.btn {
+    display: inline-block;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid rgba(53, 53, 53, 0.9);
+    border-radius: 3px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    color: rgba(127, 127, 127, 0.9);
+    text-overflow: clip;
+    background: #ffffff;
+    box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.2) inset;
+    outline: none;
+    display: inline;
+    margin-top: 400px;
+    z-index: 2;
+}
+.btn:active {
+    box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.heyaeya {
+    display: none;
+}
+
+.cel {
+  position: absolute;
+  left: calc(50vw - 128px);
+  width: 256px;
+  z-index: 1;
+}
+
+.cabo {
+  position: absolute;
+  left: calc(50vw - 36px);
+  top: 254px;
+  top: 472px;
+  width: 64px;
+}

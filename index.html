@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery.js"></script>
+  </head>
+  <body>
+    <div id="bg"></div>
+
+    <audio loop class="heyaeya" id="heyaeya" controls preload="preload" src="./HEYAYEA.webm"></audio>
+
+    <center>
+      <img class="cel" src="./desligado.png">
+      <img class="cabo" src="./cabo.png">
+      <button class="btn">Plug in</button>
+    </center>
+
+    <script>
+    var playing = false;
+      $(() => {
+        $(".btn").click(() => {
+          if(playing){
+            $("#heyaeya")[0].pause();
+            $(".btn").text("Plug in");
+            $(".cel")[0].src = "./desligado.png";
+            $(".cabo").animate({"top": 472}, 200);
+          } else {
+            $("#heyaeya")[0].play();
+            $(".btn").text("Plug out");
+            $(".cel")[0].src = "./ligado.png";
+            $(".cabo").animate({"top": 254}, 200);
+          }
+          $("#bg").toggleClass("bg");
+          playing = !playing;
+        });
+      });
+    </script>
+  </body>
+</html>
