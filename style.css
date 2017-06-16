@@ -1,5 +1,8 @@
+html, body {
+  overflow-x: hidden;
+}
 body {
-    overflow: hidden;
+  position: relative
 }
 
 #bg {
